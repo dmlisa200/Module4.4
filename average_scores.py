@@ -9,7 +9,7 @@ prints out inputs and average score rounded to 2 decimal points.
 def average(score1, score2, score3):
     score1 = input("Enter score1: ")
     if score1 < 0:
-        raise Exception("Enter a positive number")
+        raise ValueError
     score2 = input("Enter score2: ")
     score3 = input("Enter score3: ")
     return (int(score1) + int(score2) + int(score3))/3
